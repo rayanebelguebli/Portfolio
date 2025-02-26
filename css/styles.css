@@ -10,6 +10,36 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ .icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.icon-text {
+  position: absolute;
+  bottom: -30px; /* Positionnement du texte sous l'icône */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  visibility: hidden; /* Masquer le texte par défaut */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.icon-container:hover .icon-text {
+  visibility: visible; /* Afficher le texte au survol */
+  opacity: 1;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
