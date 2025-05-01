@@ -398,6 +398,10 @@ font-size: 1.1rem;
     color: var(--color-accent);
 }
 
+.project-content a {
+    color: var(--color-accent);
+}
+
 .project-content p {
     padding-top: 1rem;
 }
