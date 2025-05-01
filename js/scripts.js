@@ -22,7 +22,7 @@ function initFilterButtons() {
             const filterValue = btn.getAttribute('data-filter');
             projectCards.forEach(card => {
                 // Cacher ou afficher la carte selon le filtre
-                if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                if (filterValue === 'all' || card.getAttribute('data-category') === filterValue || card.getAttribute('data-category2') === filterValue) {
                     card.classList.remove('hidden');
                     // Forcer la révélation de la carte visible immédiatement
                     setTimeout(() => {
